@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <div class = "buttonarea">
+    <!--
+    <form action="{{ url_for('get_menus') }}" method=get class=add-entry>
+      <button type=submit name=get value=Get class = "btn">ガチャを回す</button>
+    </form>
+  -->
+    <a href="/get" class="btn">ガチャを回す</a>
+  </div>
+
+
+  <div class="result">
+    {% for menu in menus %}
+    <div class="box menu">
+      <h2>{{ menu.name }}</h2>
+        <p>{{ menu.price }}円　{{ menu.calorie }}kcal　塩分 {{ menu.salt }}g<p>
+    </div>
+    {% else %}
+    {% endfor %}
+    {% if menus %}
+    <div class="box rst">
+      <h2>計 {{ 1000 - budget }}円　{{ calorie }}kcal　塩分 {{ salt }}g</h2>
+    </div>
+    {% endif %}
+
+  </div>
+{% endblock %}

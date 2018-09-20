@@ -1,0 +1,104 @@
+body {
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic',sans-serif;
+  background: #007c00;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.page {
+  margin: 2em auto;
+  width: 35em;
+  border: 5px double #007c00;
+  padding: 1em;
+  background: white;
+}
+
+.heading {
+  border-bottom: 2px solid #007c00;
+  text-align: center;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.heading h1 {
+  font-size: 2em;
+  color: #d70002;
+}
+
+.buttonarea {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 10em;
+  padding: 1em 1em;
+  text-decoration: none;
+  background: rgba(0,124,0,0.8);
+  color: #ffffff;
+  border-bottom: solid 4px #007c00;
+  border-radius: 3px;
+}
+
+.btn:active {/*ボタンを押したとき*/
+  -ms-transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+  border-bottom: none;
+}
+
+.result {
+  text-align: center;
+}
+
+.menus {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box{
+    margin: 1em 0;
+    border-left: solid 6px rgba(0,124,0,1);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.menu {
+  padding: 0.5em 1em;
+  background: rgba(0,124,0,0.1);
+}
+
+.rst {
+  padding: 1em 1em;
+  background: rgba(0,124,0,0.3);
+}
+
+.box h2 {
+  color: #d70002;
+  font-size: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+.box p {
+  color: #848484;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.metanav {
+  text-align: right;
+  font-size: 0.8em;
+  padding: 0.3em;
+  margin-bottom: 1em;
+  background: #fafafa;
+}
+
+.error {
+  background: #f0d6d6;
+  padding: 0.5em;
+}
