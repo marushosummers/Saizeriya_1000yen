@@ -4,3 +4,5 @@
 * 2018.9.20時点のグランドメニュー記載のみ
 * 持ち帰り商品なし
 * 深夜料金の加算なし
+
+https://qiita.com/marushosummers/items/a2d3681fac863734ec8a
