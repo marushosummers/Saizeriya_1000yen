@@ -1,6 +1,7 @@
 .env
 __pycache__
 db
+.vscode
 
 # Created by https://www.gitignore.io/api/virtualenv
 
