@@ -62,5 +62,3 @@ def get_menus():
     text += "計 " + str(budget) + "円 " + str(calorie) + "kcal 塩分 " + str(round(salt,1)) + "g" + "\n" + "\n"
 
     return render_template('show_menus.html', menus=menus, budget=budget, calorie=calorie, salt=round(salt,1), text=text)
-
-import random
