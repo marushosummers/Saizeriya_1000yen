@@ -41,18 +41,18 @@ def get_menus():
             break
 
         # select food
-        rand = random.randrange(0, len(candidate))
+        food = random.choice(candidate)
 
         # add to list
-        menus.append(candidate[rand])
+        menus.append(food)
 
         #add text for tweet
-        text += str(candidate[rand].name) + "\n"
+        text += str(food.name) + "\n"
 
         #calc
-        budget -= int(candidate[rand].price)
-        calorie += int(candidate[rand].calorie)
-        salt += float(candidate[rand].salt)
+        budget -= int(food.price)
+        calorie += int(food.calorie)
+        salt += float(food.salt)
 
 
     budget = money - budget
