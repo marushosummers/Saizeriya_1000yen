@@ -14,7 +14,7 @@ def get_menus():
 
     # params
     menus = []
-    text = "サイゼリヤ1000円ガチャを回したよ！" + "\n" + "\n"
+    text = "【期間限定】おうちでサイゼリヤガチャを回したよ！" + "\n" + "\n"
     money = 1000
     budget = money
     calorie = 0

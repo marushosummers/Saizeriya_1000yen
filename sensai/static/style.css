@@ -108,3 +108,42 @@ h1, h2 {
   background: #f0d6d6;
   padding: 0.5em;
 }
+
+.ribbon01 {
+	width: 106px;
+	height: 108px;
+	overflow: hidden;
+	position: absolute;
+	top: -6px;
+	right: -6px;
+}
+.ribbon01 .ribbon {
+	font-size: 1em;
+	line-height: 1.2em;
+	position: relative;
+	top: 26px;
+	left: -11px;
+	width: 150px;
+	padding: 7px 0;
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #ffffff;
+	background-color: #2196F3;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.ribbon01 .ribbon::before,.ribbon01 .ribbon::after {
+	position: absolute;
+	bottom: -4px;
+	content: '';
+	border-width: 4px 4px 0 4px;
+	border-style: solid;
+	border-color: #1565C0 transparent transparent transparent;
+}
+.ribbon01 .ribbon:before {
+	left: 0;
+}
+.ribbon01 .ribbon:after {
+	right: 0;
+}
