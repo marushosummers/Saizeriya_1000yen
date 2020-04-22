@@ -1,6 +1,7 @@
 from sensai import db
 from sqlalchemy import Column, Integer, String
 
+
 class Menu(db.Model):
     __tablename__ = 'menu'
     id = db.Column(db.Integer, primary_key=True)
