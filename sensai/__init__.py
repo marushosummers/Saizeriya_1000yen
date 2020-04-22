@@ -6,4 +6,4 @@ app.config.from_object('sensai.config')
 
 db = SQLAlchemy(app)
 
-import sensai.views
+import sensai.views  # noqa: F401

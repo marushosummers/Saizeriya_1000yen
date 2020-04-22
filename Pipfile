@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+flake8 = "*"
+
+[packages]
+gunicorn = "*"
+Flask = "*"
+Flask-SQLAlchemy = "*"
+Flask-Script = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+start = "python run.py"
+test = "python -m unittest discover -v"
+format = "autopep8 -ivr ."
+lint = "flake8 --show-source ."
