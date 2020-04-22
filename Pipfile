@@ -17,7 +17,7 @@ Flask-Script = "*"
 python_version = "3.8"
 
 [scripts]
-start = "python main.py"
+start = "python run.py"
 test = "python -m unittest discover -v"
 format = "autopep8 -ivr ."
 lint = "flake8 --show-source ."
