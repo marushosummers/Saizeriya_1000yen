@@ -6,7 +6,7 @@ var redirectStatus = parseInt(process.env.REDIRECT_STATUS || 302);
 var port = process.env.PORT || 5000;
 
 app.get('*', function(request, response) {
-  response.redirect(redirectStatus, newBaseURL + request.url);
+  response.redirect(redirectStatus, newBaseURL);
 });
 
 app.listen(port, function() {
